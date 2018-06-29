@@ -47,3 +47,24 @@ int main()
 输出样例：
 1
 2 5 4 3 1
+
+以上是题目及其答案.
+
+List Reverse(List L)
+{
+    List cur,rear,temp;/*问题的关键是设置三个指针指向关键点*/
+    cur=L;
+    if(!cur)/*如果单链表为空则直接返回
+        return L;
+    rear=cur->Next;/*记录当前结点的下一个结点*/
+    cur->Next=NULL;
+    while(rear)/*开始逆转*/
+    {
+        temp=rear->Next;
+        rear->Next=cur;
+        cur=rear;
+        rear=temp;
+    }
+    L=cur;
+    return L;
+}
