@@ -48,8 +48,10 @@ int main()
 1
 2 5 4 3 1
 
-以上是题目及其答案.
+以上是题目及其输出.
 
+
+以下是答案.
 List Reverse(List L)
 {
     List cur,rear,temp;/*问题的关键是设置三个指针指向关键点*/
